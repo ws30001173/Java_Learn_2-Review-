@@ -1,4 +1,4 @@
-public class Main {
+public class Main { // extends Threads
 
   // Comments
   /*
@@ -73,6 +73,11 @@ public class Main {
     this.name = newName;
   }
 
+  // Enums
+  enum Level {
+    LOW, MEDIUM, HIGH
+  }
+
   public static void main(String[] args) {
     System.out.println("Hello World!");
     System.out.println("Multiple lines`");
@@ -125,5 +130,20 @@ public class Main {
 
     myObj.setName("Max");
     System.out.println(myObj.getName());
+
+    Level level_1 = Level.LOW;
+    System.out.println(level_1);
+    for (Level level : Level.values()) {
+      System.out.println(level);
+    }
+
+    // Threads
+    // Thread thread = new Thread();
+    // thread.start();
+    // System.out.println("outside of the thread!");
+    // }
+
+    // public void runThread() {
+    // System.out.println("This is a thread running.");
   }
 }
